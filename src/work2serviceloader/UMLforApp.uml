@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="UMLforApp">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_9zzhcOPcEeSkuamWjB9cQw" name="SortService">
+    <ownedOperation xmi:id="_MtDNoOPdEeSkuamWjB9cQw" name="sort">
+      <ownedParameter xmi:id="_WjmcAOPdEeSkuamWjB9cQw" name="list "/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_yWiFguPfEeSkuamWjB9cQw" name="Operation1"/>
+    <ownedOperation xmi:id="_y85h8OPfEeSkuamWjB9cQw" name="getName"/>
+    <ownedOperation xmi:id="_3yFvQuPfEeSkuamWjB9cQw" name="Operation2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y0aw0OPeEeSkuamWjB9cQw" name="BubbleSort" clientDependency="_CyL1EOPfEeSkuamWjB9cQw">
+    <ownedAttribute xmi:id="_--MJkOPfEeSkuamWjB9cQw" name="name"/>
+    <ownedAttribute xmi:id="_2Zq44uPhEeSkuamWjB9cQw" name="Property1"/>
+    <interfaceRealization xmi:id="_CyL1EOPfEeSkuamWjB9cQw" name="InterfaceRealization1" supplier="_9zzhcOPcEeSkuamWjB9cQw" client="_y0aw0OPeEeSkuamWjB9cQw" contract="_9zzhcOPcEeSkuamWjB9cQw"/>
+    <ownedOperation xmi:id="_JJMacuPfEeSkuamWjB9cQw" name="sort">
+      <ownedParameter xmi:id="_Of9DwOPfEeSkuamWjB9cQw" name="list"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZmRQ6OPfEeSkuamWjB9cQw" name="SelectSort" clientDependency="_hrHRFOPfEeSkuamWjB9cQw">
+    <ownedAttribute xmi:id="_DeUF0uPgEeSkuamWjB9cQw" name="name"/>
+    <interfaceRealization xmi:id="_hrHRFOPfEeSkuamWjB9cQw" name="InterfaceRealization1" supplier="_9zzhcOPcEeSkuamWjB9cQw" client="_ZmRQ6OPfEeSkuamWjB9cQw" contract="_9zzhcOPcEeSkuamWjB9cQw"/>
+    <ownedOperation xmi:id="_nSXNcOPfEeSkuamWjB9cQw" name="sort">
+      <ownedParameter xmi:id="_trU6oOPfEeSkuamWjB9cQw" name="list"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aN0ZGOPfEeSkuamWjB9cQw" name="QuickSort" clientDependency="_itMZJOPfEeSkuamWjB9cQw">
+    <ownedAttribute xmi:id="_F5E4EuPgEeSkuamWjB9cQw" name="name"/>
+    <interfaceRealization xmi:id="_itMZJOPfEeSkuamWjB9cQw" name="InterfaceRealization1" supplier="_9zzhcOPcEeSkuamWjB9cQw" client="_aN0ZGOPfEeSkuamWjB9cQw" contract="_9zzhcOPcEeSkuamWjB9cQw"/>
+    <ownedOperation xmi:id="_JJHFcuPgEeSkuamWjB9cQw" name="sort">
+      <ownedParameter xmi:id="_LEiQUOPgEeSkuamWjB9cQw" name="list"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_d-KowOPgEeSkuamWjB9cQw" name="SortServiceProvider" clientDependency="_8RZhROPhEeSkuamWjB9cQw">
+    <ownedAttribute xmi:id="_2ho-kuPgEeSkuamWjB9cQw" name="services"/>
+    <ownedOperation xmi:id="_jWaf0uPgEeSkuamWjB9cQw" name="registerService">
+      <ownedParameter xmi:id="_ncx4QOPgEeSkuamWjB9cQw" name="service" type="_9zzhcOPcEeSkuamWjB9cQw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="__PGd8uPgEeSkuamWjB9cQw" name="getService">
+      <ownedParameter xmi:id="_B0H_cOPhEeSkuamWjB9cQw" name="servicename"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IosqkOPhEeSkuamWjB9cQw" name="A_&lt;sortServiceProvider>_&lt;sortService>" memberEnd="_IosqkePhEeSkuamWjB9cQw _IosqlOPhEeSkuamWjB9cQw">
+    <ownedEnd xmi:id="_IosqkePhEeSkuamWjB9cQw" name="sortServiceProvider" type="_d-KowOPgEeSkuamWjB9cQw" association="_IosqkOPhEeSkuamWjB9cQw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IosqkuPhEeSkuamWjB9cQw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iosqk-PhEeSkuamWjB9cQw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_IosqlOPhEeSkuamWjB9cQw" name="sortService" type="_9zzhcOPcEeSkuamWjB9cQw" association="_IosqkOPhEeSkuamWjB9cQw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IosqlePhEeSkuamWjB9cQw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IosqluPhEeSkuamWjB9cQw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_8RZhROPhEeSkuamWjB9cQw" name="Dependency1" supplier="_9zzhcOPcEeSkuamWjB9cQw" client="_d-KowOPgEeSkuamWjB9cQw"/>
+</uml:Model>
